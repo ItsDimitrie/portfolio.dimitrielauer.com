@@ -19,6 +19,20 @@
         <a href="education">Education</a>
         <a href="Camera-experience">Camera-Experience</a>
         <a href="contact">Contact</a>
+        <div>
+            @if (Route::has('login'))
+                <div>
+                    @auth
+                        <a href="{{ url('/dashboard') }}" >{{Auth::user()->name}}</a>
+                    @else
+                        <a href="{{ route('login') }}">Log in</a>
+
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}" >Register</a>
+                        @endif
+                    @endauth
+                </div>
+            @endif
       </nav>
       <h6 class="col-sm-6" id="ondertext">Freelance Camera-Operator / Software Student</h6>
 
