@@ -1,3 +1,5 @@
+<p align="center"><a href="https://hz.nl" target="_blank"><img src="https://yt3.googleusercontent.com/ytc/AGIKgqNCJXAVTB4rbcH0Dwa6IpGpYbPKMBBJjCuJDOizvg=s900-c-k-c0x00ffffff-no-rj" width="400" alt="HZ Logo"></a></p>
+
 ## Over de opdracht
 
 Opdracht 1 van security is uitgevoerd. Alle pagina's op de pagina behalve de index is alleen toegankelijk
