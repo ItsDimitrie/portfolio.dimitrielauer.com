@@ -1,3 +1,15 @@
+## Over de opdracht
+
+Opdracht 1 van security is uitgevoerd. Alle pagina's op de pagina behalve de index is alleen toegankelijk
+als je bent ingelogd. Maak een account aan via de register knop.
+
+Kan misschien niet werken op alle devices. Zorg dat je een werkend MySQL database en werkende docker client hebt.
+Zorg er ook voor dat je alle bijbehorden dependencies hebt.
+
+Opdracht gemaakt door Dimitrie Lauer voor HZ University
+
+Link naar de opdracht : https://glaze-donut-5a5.notion.site/1-The-Script-Kiddie-775dc90c5a3c422a9f98c9d312dcc0e9
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
