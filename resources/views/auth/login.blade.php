@@ -1,3 +1,7 @@
+<head>
+<link href="/css/login.css" rel="stylesheet" type="text/css">
+</head>
+
 <x-guest-layout>
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
@@ -42,6 +46,15 @@
             <x-primary-button class="ml-3">
                 {{ __('Log in') }}
             </x-primary-button>
+        </div>
+
+        <div id='passwordmanager' class="flex items-center justify-end mt-4">
+
+        <img src="https://png.pngtree.com/png-vector/20220825/ourmid/pngtree-did-you-know-png-image_6124044.png" alt="Did you know?" width="50" height="50">
+        <br>
+            <p> Use a password manager to securely store and autofill your passwords,
+                ensuring convenience and protecting yourself from data breaches.
+                Take control of your digital life today!</p>
         </div>
     </form>
 </x-guest-layout>
