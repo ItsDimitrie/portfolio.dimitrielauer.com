@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BlogsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,8 +35,6 @@ Route::get('/education', function () {
     return view('education');
 })->middleware(['auth', 'verified'])->name('education');
 
-
-
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -44,6 +43,16 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+Route::middleware('auth')->group(function () {
+    Route::get('/blogs', [BlogsController::class, 'index'])->name('blogs.index');
+    Route::get('/blogs/create', [BlogsController::class, 'create'])->name('blogs.create');
+    Route::post('/blogs', [BlogsController::class, 'store'])->name('blogs.store');
+    Route::get('/blogs/{blog}', [BlogsController::class, 'show'])->name('blogs.show');
+    Route::get('/blogs/{blog}/edit', [BlogsController::class, 'edit'])->name('blogs.edit');
+    Route::put('/blogs/{blog}', [BlogsController::class, 'update'])->name('blogs.update');
+    Route::delete('/blogs/{blog}', [BlogsController::class, 'destroy'])->name('blogs.destroy');
 });
 
 require __DIR__.'/auth.php';
