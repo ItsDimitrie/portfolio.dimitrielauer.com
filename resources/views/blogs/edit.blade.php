@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class='titel'>
+    <div id='create'>
         <h1>Edit blog {{$blogs->titel}}</h1>
     </div>
 

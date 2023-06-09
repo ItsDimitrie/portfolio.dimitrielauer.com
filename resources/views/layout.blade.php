@@ -17,10 +17,7 @@
     <div class="row">
       <h1 class="col-sm-6"><a id="homelink" href="/">Dimitrie Lauer</a></h1>
       <nav class="col-sm-6 text-right">
-        <a href="about">About Me</a>
-        <a href="education">Education</a>
-        <a href="Camera-experience">Camera-Experience</a>
-        <a href="contact">Contact</a>
+        <a href="{{ url('/blogs') }}">Blogs</a>
         <div>
             @if (Route::has('login'))
                 <div>
@@ -41,7 +38,7 @@
   </header>
 
     <body>
-        @yield ('content');
+        @yield ('content')
     </body>
 
 

@@ -45,15 +45,17 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::middleware('auth')->group(function () {
-    Route::get('/blogs', [BlogsController::class, 'index'])->name('blogs.index');
-    Route::get('/blogs/create', [BlogsController::class, 'create'])->name('blogs.create');
-    Route::post('/blogs', [BlogsController::class, 'store'])->name('blogs.store');
-    Route::get('/blogs/{blog}', [BlogsController::class, 'show'])->name('blogs.show');
-    Route::get('/blogs/{blog}/edit', [BlogsController::class, 'edit'])->name('blogs.edit');
-    Route::put('/blogs/{blog}', [BlogsController::class, 'update'])->name('blogs.update');
-    Route::delete('/blogs/{blog}', [BlogsController::class, 'destroy'])->name('blogs.destroy');
-});
+Route::resource('/blogs', BlogsController::class);
+
+// Route::middleware('auth')->group(function () {
+//     Route::get('/blogs', [BlogsController::class, 'index'])->name('blogs.index');
+//     Route::get('/blogs/create', [BlogsController::class, 'create'])->name('blogs.create');
+//     Route::post('/blogs', [BlogsController::class, 'store'])->name('blogs.store');
+//     Route::get('/blogs/{blog}', [BlogsController::class, 'show'])->name('blogs.show');
+//     Route::get('/blogs/{blog}/edit', [BlogsController::class, 'edit'])->name('blogs.edit');
+//     Route::put('/blogs/{blog}', [BlogsController::class, 'update'])->name('blogs.update');
+//     Route::delete('/blogs/{blog}', [BlogsController::class, 'destroy'])->name('blogs.destroy');
+// });
 
 require __DIR__.'/auth.php';
 

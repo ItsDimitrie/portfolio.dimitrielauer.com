@@ -79,3 +79,15 @@ button a {
     margin-left: auto;
     margin-right: auto;
 }
+
+form {
+    padding:20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-align: center;
+}
+
+.field {
+    margin-bottom: 20px;
+}
