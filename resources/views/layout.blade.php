@@ -9,7 +9,8 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
   <link href="/css/style.css" rel="stylesheet" type="text/css">
   <link href="/css/blogs.css" rel="stylesheet" type="text/css">
-
+  <link href="/css/potd.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="/js/potd.js"></script>
 </head>
 
 
@@ -18,6 +19,8 @@
       <h1 class="col-sm-6"><a id="homelink" href="/">Dimitrie Lauer</a></h1>
       <nav class="col-sm-6 text-right">
         <a href="{{ url('/blogs') }}">Blogs</a>
+        <a href="{{ url('/potd') }}">NASA POTD</a>
+
         <div>
             @if (Route::has('login'))
                 <div>
